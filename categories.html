@@ -1,823 +1,594 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light" />
-    <title>Categories | Moonlit Home Decor</title>
-    <meta
-      name="description"
-      content="Browse product categories by department and room, built for elegant Pinterest-friendly shopping."
-    />
-    <link rel="canonical" href="https://moonlithomedecor.com/categories.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Categories | Moonlit Home Decor" />
-    <meta property="og:url" content="https://moonlithomedecor.com/categories.html" />
-    <meta
-      property="og:description"
-      content="Departments and room-based collections for modern minimalist interiors."
-    />
-    <meta
-      property="og:image"
-      content="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg?auto=compress&cs=tinysrgb&w=1400"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <div class="ambient-shape ambient-shape--one" aria-hidden="true"></div>
-    <div class="ambient-shape ambient-shape--two" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <a class="site-brand" href="index.html" aria-label="Moonlit Home Decor home">
-        <span class="brand-mark" aria-hidden="true">MH</span>
-        <span class="brand-text">Moonlit Home Decor</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-        Menu
-      </button>
-      <nav class="site-nav" id="primary-nav" aria-label="Primary">
-        <a class="site-nav__link" href="index.html">Home</a>
-        <a class="site-nav__link" href="blog.html">Blog</a>
-        <a class="site-nav__link" href="about.html">About Us</a>
-        <a class="site-nav__link site-nav__link--active" href="categories.html">Categories</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Categories | Moonlit Home Decor</title>
+  <meta name="description"
+    content="Browse product categories by department and room, built for elegant Pinterest-friendly shopping." />
+  <link rel="canonical" href="https://moonlithomedecor.com/categories.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Categories | Moonlit Home Decor" />
+  <meta property="og:url" content="https://moonlithomedecor.com/categories.html" />
+  <meta property="og:description" content="Departments and room-based collections for modern minimalist interiors." />
+  <meta property="og:image"
+    content="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg?auto=compress&cs=tinysrgb&w=1400" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
 
-    <main>
-      <section class="page-hero page-hero--catalog" data-reveal>
-        <h1>Categories</h1>
-        <p>
-          Filter by department and room to instantly see only the products that match what you want.
-        </p>
-      </section>
+<body>
+  <div class="ambient-shape ambient-shape--one" aria-hidden="true"></div>
+  <div class="ambient-shape ambient-shape--two" aria-hidden="true"></div>
 
-      <section class="section catalog-shell" data-catalog-root>
-        <div class="section__head" data-reveal>
-          <h2>Product Catalog</h2>
-          <p>Tap filters to narrow results in real time.</p>
-        </div>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Moonlit Home Decor home">
+      <span class="brand-mark" aria-hidden="true">MH</span>
+      <span class="brand-text">Moonlit Home Decor</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      Menu
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <a class="site-nav__link" href="index.html">Home</a>
+      <a class="site-nav__link" href="blog.html">Blog</a>
+      <a class="site-nav__link" href="about.html">About Us</a>
+      <a class="site-nav__link site-nav__link--active" href="categories.html">Categories</a>
+    </nav>
+  </header>
 
-        <div class="catalog-filter-bar" data-reveal>
-          <article class="catalog-filter-group" aria-label="Department filters">
-            <p class="catalog-filter-label">Department</p>
-            <div class="chip-grid">
-              <button class="chip chip--filter is-active" type="button" data-filter-kind="department" data-filter-value="all">
-                All Departments
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="furniture">
-                Furniture
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="kitchen">
-                Kitchen
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="outdoor">
-                Outdoor
-              </button>
-            </div>
-          </article>
+  <main>
+    <section class="page-hero page-hero--catalog" data-reveal>
+      <h1>Categories</h1>
+      <p>
+        Filter by department and room to instantly see only the products that match what you want.
+      </p>
+    </section>
 
-          <article class="catalog-filter-group" aria-label="Room filters">
-            <p class="catalog-filter-label">Room</p>
-            <div class="chip-grid">
-              <button class="chip chip--filter is-active" type="button" data-filter-kind="room" data-filter-value="all">
-                All Rooms
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="living-room">
-                Living Room
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="bedroom">
-                Bedroom
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="kitchen">
-                Kitchen
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="small-spaces">
-                Small Spaces
-              </button>
-              <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="garden">
-                Garden
-              </button>
-            </div>
-          </article>
-        </div>
-
-        <p class="catalog-status" data-catalog-status>Showing 19 products</p>
-        <p class="catalog-active" aria-live="polite">
-          <span class="catalog-active__item">Department: <strong data-current-department>All Departments</strong></span>
-          <span class="catalog-active__item">Room: <strong data-current-room>All Rooms</strong></span>
-        </p>
-
-        <div class="catalog-grid">
-          <article class="product-card catalog-item" data-catalog-item data-department="kitchen" data-rooms="kitchen" data-reveal>
-            <a class="product-card__media" href="product-jirain-rattan-bar-stools.html">
-              <img
-                src="https://m.media-amazon.com/images/I/71Ojj6UtSbL._AC_SL1500_.jpg"
-                alt="JIRAIN Natural Rattan Bar Stools Set of 2"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Kitchen</span>
-                <span class="catalog-badge">Room: Kitchen</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>JIRAIN Natural Rattan Bar Stools (Set of 2)</h3>
-              <p>24-inch counter stools with natural rattan cane back and black metal legs.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-jirain-rattan-bar-stools.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4roCs8F"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="outdoor"
-            data-rooms="garden"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-phi-villa-outdoor-patio-dining-set.html">
-              <img
-                src="https://m.media-amazon.com/images/I/81QqlPIS+vL._AC_SL1500_.jpg"
-                alt="PHI VILLA outdoor patio dining set with blue swivel chairs and steel table"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Outdoor</span>
-                <span class="catalog-badge">Room: Garden</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>PHI VILLA 5-Piece Outdoor Patio Dining Set (Blue)</h3>
-              <p>All-weather patio dining set with swivel chairs and umbrella-ready steel table for deck or garden use.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-phi-villa-outdoor-patio-dining-set.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3OALQqZ"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="outdoor"
-            data-rooms="garden"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-hillga-luxury-patio-furniture-set.html">
-              <img
-                src="https://m.media-amazon.com/images/I/91kMReWigOL._AC_SL1500_.jpg"
-                alt="HILLGA luxury outdoor wicker patio furniture set with beige cushions"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Outdoor</span>
-                <span class="catalog-badge">Room: Garden</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>HILLGA Luxury Patio Furniture Set with 6-inch Cushion</h3>
-              <p>6-piece wicker conversation set with thick cushions and high-back swivel rocker chairs.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-hillga-luxury-patio-furniture-set.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3OplWqo"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="outdoor"
-            data-rooms="garden"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-anraja-wooden-porch-swing-2-seater.html">
-              <img
-                src="https://m.media-amazon.com/images/I/81f5ZBjWjgL._AC_SL1500_.jpg"
-                alt="Anraja wooden porch swing 2-seater in brown with hanging chains"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Outdoor</span>
-                <span class="catalog-badge">Room: Garden</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Anraja Wooden Porch Swing 2-Seater (4 Ft, Brown)</h3>
-              <p>4-foot porch swing bench with hanging chains, ergonomic rollback seat, and 800 lb weight capacity.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-anraja-wooden-porch-swing-2-seater.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4clb0nr"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="outdoor furniture"
-            data-rooms="living-room garden"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-lahome-boho-machine-washable-rug-5x7.html">
-              <img
-                src="https://m.media-amazon.com/images/I/91OngcpQwJL._AC_SL1500_.jpg"
-                alt="Lahome boho machine washable 5x7 area rug"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Outdoor, Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Garden</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Lahome Boho Machine Washable Rug 5x7</h3>
-              <p>Non-slip low-profile area rug with washable design for living room and covered outdoor transitions.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-lahome-boho-machine-washable-rug-5x7.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4lblCHV"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture kitchen"
-            data-rooms="kitchen living-room"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-joaxswe-farmhouse-sideboard-buffet-cabinet.html">
-              <img
-                src="https://m.media-amazon.com/images/I/71wloN4zy6L._AC_SL1500_.jpg"
-                alt="Joaxswe farmhouse navy blue sideboard buffet cabinet with glass doors"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture, Kitchen</span>
-                <span class="catalog-badge">Room: Kitchen, Living Room</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Joaxswe Farmhouse Sideboard Buffet Cabinet (Navy Blue)</h3>
-              <p>59-inch credenza with glass doors, drawers, and adjustable shelves for storage and coffee-bar setups.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-joaxswe-farmhouse-sideboard-buffet-cabinet.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3MFw8dI"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-ylgj-tidy-modern-wood-tv-stand.html">
-              <img
-                src="https://m.media-amazon.com/images/I/71KxpPDoLaL._AC_SL1500_.jpg"
-                alt="YLGJ and TIDY modern wood TV stand in oak finish"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>YLGJ&amp;TIDY Modern Wood TV Stand (Oak)</h3>
-              <p>Entertainment center for up to 60-inch TVs with shelving and cabinet storage.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-ylgj-tidy-modern-wood-tv-stand.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4aHOZge"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-t4tream-fluted-makeup-vanity-desk.html">
-              <img
-                src="https://m.media-amazon.com/images/I/914oG7oLJ1L._AC_SL1500_.jpg"
-                alt="T4TREAM fluted makeup vanity desk with mirror and drawers in alder grey"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>T4TREAM Fluted Makeup Vanity Desk with Lighted Mirror</h3>
-              <p>48-inch vanity desk with HD lighted mirror, glass top, and five drawers plus shelves.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-t4tream-fluted-makeup-vanity-desk.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3OxpNl1"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-brandream-patchwork-quilted-comforter-set.html">
-              <img
-                src="https://m.media-amazon.com/images/I/91gPpTco-tL._AC_SL1500_.jpg"
-                alt="Brandream queen patchwork quilted comforter coverlet set in green floral style"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Brandream Patchwork Quilted Comforter Set (Queen)</h3>
-              <p>Lightweight cotton patchwork floral bedding set designed for soft, layered bedroom styling.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-brandream-patchwork-quilted-comforter-set.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4cUTs1H"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-greenland-home-antique-rose-quilt-set.html">
-              <img
-                src="https://m.media-amazon.com/images/I/9126bi5alML._AC_SL1500_.jpg"
-                alt="Greenland Home Antique Rose cotton quilt set in ecru floral patchwork"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Greenland Home Antique Rose Quilt Set (5-Piece Full/Queen)</h3>
-              <p>Cotton heirloom-style quilt set with shams and two decorative pillows for layered bedroom styling.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-greenland-home-antique-rose-quilt-set.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4rKf8Cp"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room small-spaces"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-fivewillowise-fluted-buffet-cabinet.html">
-              <img
-                src="https://m.media-amazon.com/images/I/71FjQsGCyIL._AC_SL1500_.jpg"
-                alt="FiveWillowise fluted buffet cabinet with storage in wood grain finish"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Small Spaces</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>FiveWillowise Fluted Buffet Cabinet with Storage</h3>
-              <p>Compact sideboard cabinet with adjustable shelves and solid wood legs for versatile home storage.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-fivewillowise-fluted-buffet-cabinet.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4awCAeM"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-olixis-5-drawer-dresser-nightstand.html">
-              <img
-                src="https://m.media-amazon.com/images/I/616nFmKmzDL._AC_SL1500_.jpg"
-                alt="OLIXIS 5 drawer dresser nightstand in classic white"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>OLIXIS 5 Drawer Dresser Nightstand (Classic White)</h3>
-              <p>Five-drawer storage organizer with wooden top and metal frame for living room and entryway use.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-olixis-5-drawer-dresser-nightstand.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3MSPqfL"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room small-spaces"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-superjare-rattan-console-sofa-table.html">
-              <img
-                src="https://m.media-amazon.com/images/I/91I6qjVbZmL._AC_SL1500_.jpg"
-                alt="SUPERJARE rattan console sofa table with drawers in natural finish"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Small Spaces</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>SUPERJARE Rattan Console Sofa Table with Drawers</h3>
-              <p>Rattan-textured console table with outlets, USB-C charging, three drawers, and open shelf storage.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-superjare-rattan-console-sofa-table.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3MPPdKo"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-huuger-entryway-console-table.html">
-              <img
-                src="https://m.media-amazon.com/images/I/81eJFy-BcAL._AC_SL1500_.jpg"
-                alt="Huuger industrial entryway console table with shelves in rustic brown"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Huuger 41.3-Inch Entryway Console Table (Rustic Brown)</h3>
-              <p>Industrial console sofa table with open storage shelves and O-shaped metal frame.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-huuger-entryway-console-table.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3OFvhu1"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-yopeng-modular-sectional-couch.html">
-              <img
-                src="https://m.media-amazon.com/images/I/713CNxR45HL._AC_SL1500_.jpg"
-                alt="YOPENG luxury modular sectional couch in beige boucle"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>YOPENG Luxury Modular Sectional Couch</h3>
-              <p>125-inch modular sectional sofa with ottoman chaise and curved L-shape profile.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-yopeng-modular-sectional-couch.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4bXQ59T"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-fluted-tv-stand-80-inch.html">
-              <img
-                src="https://m.media-amazon.com/images/I/71R5rfCoPLL._AC_SL1500_.jpg"
-                alt="Fluted black wood TV stand for TVs up to 80 inches"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Fluted TV Stand for TVs up to 80 Inches</h3>
-              <p>Mid-century modern media console with adjustable shelf and cable management holes.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-fluted-tv-stand-80-inch.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/46LNlZG"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room bedroom small-spaces"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-joinice-round-coffee-table-set.html">
-              <img
-                src="https://m.media-amazon.com/images/I/81XecdItAtL._AC_SL1500_.jpg"
-                alt="JOINICE round coffee table and matching end table set in walnut finish"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Bedroom, Small Spaces</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>JOINICE Round Coffee Table and End Table Set</h3>
-              <p>Walnut fluted center table with storage plus matching side table for compact spaces.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-joinice-round-coffee-table-set.html">View product details</a>
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4aHn7ZK"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-ameriwood-home-franklin-accent-table-pink.html">
-              <img
-                src="https://m.media-amazon.com/images/I/81uqi+z9rUL._AC_SL1500_.jpg"
-                alt="Ameriwood Home Franklin accent table with 2 drawers in pink"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Ameriwood Home Franklin Accent Table with 2 Drawers (Pink)</h3>
-              <p>Compact side table with two drawers and lower shelf for bedroom and living room storage.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-ameriwood-home-franklin-accent-table-pink.html"
-                  >View product details</a
-                >
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/3OONvt9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="product-card catalog-item"
-            data-catalog-item
-            data-department="furniture"
-            data-rooms="living-room bedroom"
-            data-reveal
-          >
-            <a class="product-card__media" href="product-vie-savaran-floral-pillow-covers-set-of-4.html">
-              <img
-                src="https://m.media-amazon.com/images/I/51bu7CKO0AL._AC_.jpg"
-                alt="Vie Savaran floral pillow covers in pink rose watercolor print"
-                loading="lazy"
-                decoding="async"
-              />
-            </a>
-            <div class="product-card__body">
-              <div class="catalog-badges">
-                <span class="catalog-badge">Furniture</span>
-                <span class="catalog-badge">Room: Living Room, Bedroom</span>
-              </div>
-              <p class="product-card__label">Featured Amazon Pick</p>
-              <h3>Vie Savaran Floral Pillow Covers (Set of 4, 16x16)</h3>
-              <p>Watercolor pink floral pillow covers with hidden zipper closure for sofa, bedroom, or accent chair styling.</p>
-              <div class="product-card__actions">
-                <a class="btn btn--soft" href="product-vie-savaran-floral-pillow-covers-set-of-4.html"
-                  >View product details</a
-                >
-                <a
-                  class="btn btn--primary"
-                  href="https://amzn.to/4aIZdhI"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow sponsored"
-                  >Check the latest price on Amazon</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="catalog-empty" data-catalog-empty hidden>
-          <h3>No products match this filter yet.</h3>
-          <p>Try a different room or switch one filter back to "All".</p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <strong>Moonlit Home Decor</strong><br />
-        <span>Curated home finds for calm, modern spaces.</span><br />
-        <span class="footer-disclosure">Some links may earn us a commission.</span>
+    <section class="section catalog-shell" data-catalog-root>
+      <div class="section__head" data-reveal>
+        <h2>Product Catalog</h2>
+        <p>Tap filters to narrow results in real time.</p>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About Us</a>
-        <a href="categories.html">Categories</a>
+
+      <div class="catalog-filter-bar" data-reveal>
+        <article class="catalog-filter-group" aria-label="Department filters">
+          <p class="catalog-filter-label">Department</p>
+          <div class="chip-grid">
+            <button class="chip chip--filter is-active" type="button" data-filter-kind="department"
+              data-filter-value="all">
+              All Departments
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="furniture">
+              Furniture
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="kitchen">
+              Kitchen
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="department" data-filter-value="outdoor">
+              Outdoor
+            </button>
+          </div>
+        </article>
+
+        <article class="catalog-filter-group" aria-label="Room filters">
+          <p class="catalog-filter-label">Room</p>
+          <div class="chip-grid">
+            <button class="chip chip--filter is-active" type="button" data-filter-kind="room" data-filter-value="all">
+              All Rooms
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="living-room">
+              Living Room
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="bedroom">
+              Bedroom
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="kitchen">
+              Kitchen
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="small-spaces">
+              Small Spaces
+            </button>
+            <button class="chip chip--filter" type="button" data-filter-kind="room" data-filter-value="garden">
+              Garden
+            </button>
+          </div>
+        </article>
       </div>
-      <div>&copy; <span data-year></span> Moonlit Home Decor</div>
-    </footer>
-  </body>
+
+      <p class="catalog-status" data-catalog-status>Showing 20 products</p>
+      <p class="catalog-active" aria-live="polite">
+        <span class="catalog-active__item">Department: <strong data-current-department>All Departments</strong></span>
+        <span class="catalog-active__item">Room: <strong data-current-room>All Rooms</strong></span>
+      </p>
+
+      <div class="catalog-grid">
+        <article class="product-card catalog-item" data-catalog-item data-department="kitchen" data-rooms="kitchen"
+          data-reveal>
+          <a class="product-card__media" href="product-jirain-rattan-bar-stools.html">
+            <img src="https://m.media-amazon.com/images/I/71Ojj6UtSbL._AC_SL1500_.jpg"
+              alt="JIRAIN Natural Rattan Bar Stools Set of 2" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Kitchen</span>
+              <span class="catalog-badge">Room: Kitchen</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>JIRAIN Natural Rattan Bar Stools (Set of 2)</h3>
+            <p>24-inch counter stools with natural rattan cane back and black metal legs.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-jirain-rattan-bar-stools.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4roCs8F" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="outdoor" data-rooms="garden"
+          data-reveal>
+          <a class="product-card__media" href="product-phi-villa-outdoor-patio-dining-set.html">
+            <img src="https://m.media-amazon.com/images/I/81QqlPIS+vL._AC_SL1500_.jpg"
+              alt="PHI VILLA outdoor patio dining set with blue swivel chairs and steel table" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Outdoor</span>
+              <span class="catalog-badge">Room: Garden</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>PHI VILLA 5-Piece Outdoor Patio Dining Set (Blue)</h3>
+            <p>All-weather patio dining set with swivel chairs and umbrella-ready steel table for deck or garden use.
+            </p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-phi-villa-outdoor-patio-dining-set.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3OALQqZ" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="outdoor" data-rooms="garden"
+          data-reveal>
+          <a class="product-card__media" href="product-hillga-luxury-patio-furniture-set.html">
+            <img src="https://m.media-amazon.com/images/I/91kMReWigOL._AC_SL1500_.jpg"
+              alt="HILLGA luxury outdoor wicker patio furniture set with beige cushions" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Outdoor</span>
+              <span class="catalog-badge">Room: Garden</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>HILLGA Luxury Patio Furniture Set with 6-inch Cushion</h3>
+            <p>6-piece wicker conversation set with thick cushions and high-back swivel rocker chairs.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-hillga-luxury-patio-furniture-set.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3OplWqo" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="outdoor" data-rooms="garden"
+          data-reveal>
+          <a class="product-card__media" href="product-anraja-wooden-porch-swing-2-seater.html">
+            <img src="https://m.media-amazon.com/images/I/81f5ZBjWjgL._AC_SL1500_.jpg"
+              alt="Anraja wooden porch swing 2-seater in brown with hanging chains" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Outdoor</span>
+              <span class="catalog-badge">Room: Garden</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Anraja Wooden Porch Swing 2-Seater (4 Ft, Brown)</h3>
+            <p>4-foot porch swing bench with hanging chains, ergonomic rollback seat, and 800 lb weight capacity.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-anraja-wooden-porch-swing-2-seater.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4clb0nr" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="outdoor furniture"
+          data-rooms="living-room garden" data-reveal>
+          <a class="product-card__media" href="product-lahome-boho-machine-washable-rug-5x7.html">
+            <img src="https://m.media-amazon.com/images/I/91OngcpQwJL._AC_SL1500_.jpg"
+              alt="Lahome boho machine washable 5x7 area rug" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Outdoor, Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Garden</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Lahome Boho Machine Washable Rug 5x7</h3>
+            <p>Non-slip low-profile area rug with washable design for living room and covered outdoor transitions.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-lahome-boho-machine-washable-rug-5x7.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4lblCHV" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture kitchen"
+          data-rooms="kitchen living-room" data-reveal>
+          <a class="product-card__media" href="product-joaxswe-farmhouse-sideboard-buffet-cabinet.html">
+            <img src="https://m.media-amazon.com/images/I/71wloN4zy6L._AC_SL1500_.jpg"
+              alt="Joaxswe farmhouse navy blue sideboard buffet cabinet with glass doors" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture, Kitchen</span>
+              <span class="catalog-badge">Room: Kitchen, Living Room</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Joaxswe Farmhouse Sideboard Buffet Cabinet (Navy Blue)</h3>
+            <p>59-inch credenza with glass doors, drawers, and adjustable shelves for storage and coffee-bar setups.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-joaxswe-farmhouse-sideboard-buffet-cabinet.html">View product
+                details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3MFw8dI" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom" data-reveal>
+          <a class="product-card__media" href="product-ylgj-tidy-modern-wood-tv-stand.html">
+            <img src="https://m.media-amazon.com/images/I/71KxpPDoLaL._AC_SL1500_.jpg"
+              alt="YLGJ and TIDY modern wood TV stand in oak finish" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>YLGJ&amp;TIDY Modern Wood TV Stand (Oak)</h3>
+            <p>Entertainment center for up to 60-inch TVs with shelving and cabinet storage.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-ylgj-tidy-modern-wood-tv-stand.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4aHOZge" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture" data-rooms="bedroom"
+          data-reveal>
+          <a class="product-card__media" href="product-t4tream-fluted-makeup-vanity-desk.html">
+            <img src="https://m.media-amazon.com/images/I/914oG7oLJ1L._AC_SL1500_.jpg"
+              alt="T4TREAM fluted makeup vanity desk with mirror and drawers in alder grey" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>T4TREAM Fluted Makeup Vanity Desk with Lighted Mirror</h3>
+            <p>48-inch vanity desk with HD lighted mirror, glass top, and five drawers plus shelves.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-t4tream-fluted-makeup-vanity-desk.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3OxpNl1" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture" data-rooms="bedroom"
+          data-reveal>
+          <a class="product-card__media" href="product-brandream-patchwork-quilted-comforter-set.html">
+            <img src="https://m.media-amazon.com/images/I/91gPpTco-tL._AC_SL1500_.jpg"
+              alt="Brandream queen patchwork quilted comforter coverlet set in green floral style" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Brandream Patchwork Quilted Comforter Set (Queen)</h3>
+            <p>Lightweight cotton patchwork floral bedding set designed for soft, layered bedroom styling.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-brandream-patchwork-quilted-comforter-set.html">View product
+                details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4cUTs1H" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture" data-rooms="bedroom"
+          data-reveal>
+          <a class="product-card__media" href="product-greenland-home-antique-rose-quilt-set.html">
+            <img src="https://m.media-amazon.com/images/I/9126bi5alML._AC_SL1500_.jpg"
+              alt="Greenland Home Antique Rose cotton quilt set in ecru floral patchwork" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Greenland Home Antique Rose Quilt Set (5-Piece Full/Queen)</h3>
+            <p>Cotton heirloom-style quilt set with shams and two decorative pillows for layered bedroom styling.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-greenland-home-antique-rose-quilt-set.html">View product
+                details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4rKf8Cp" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room small-spaces" data-reveal>
+          <a class="product-card__media" href="product-fivewillowise-fluted-buffet-cabinet.html">
+            <img src="https://m.media-amazon.com/images/I/71FjQsGCyIL._AC_SL1500_.jpg"
+              alt="FiveWillowise fluted buffet cabinet with storage in wood grain finish" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Small Spaces</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>FiveWillowise Fluted Buffet Cabinet with Storage</h3>
+            <p>Compact sideboard cabinet with adjustable shelves and solid wood legs for versatile home storage.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-fivewillowise-fluted-buffet-cabinet.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4awCAeM" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room" data-reveal>
+          <a class="product-card__media" href="product-olixis-5-drawer-dresser-nightstand.html">
+            <img src="https://m.media-amazon.com/images/I/616nFmKmzDL._AC_SL1500_.jpg"
+              alt="OLIXIS 5 drawer dresser nightstand in classic white" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>OLIXIS 5 Drawer Dresser Nightstand (Classic White)</h3>
+            <p>Five-drawer storage organizer with wooden top and metal frame for living room and entryway use.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-olixis-5-drawer-dresser-nightstand.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3MSPqfL" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room small-spaces" data-reveal>
+          <a class="product-card__media" href="product-superjare-rattan-console-sofa-table.html">
+            <img src="https://m.media-amazon.com/images/I/91I6qjVbZmL._AC_SL1500_.jpg"
+              alt="SUPERJARE rattan console sofa table with drawers in natural finish" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Small Spaces</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>SUPERJARE Rattan Console Sofa Table with Drawers</h3>
+            <p>Rattan-textured console table with outlets, USB-C charging, three drawers, and open shelf storage.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-superjare-rattan-console-sofa-table.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3MPPdKo" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room" data-reveal>
+          <a class="product-card__media" href="product-huuger-entryway-console-table.html">
+            <img src="https://m.media-amazon.com/images/I/81eJFy-BcAL._AC_SL1500_.jpg"
+              alt="Huuger industrial entryway console table with shelves in rustic brown" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Huuger 41.3-Inch Entryway Console Table (Rustic Brown)</h3>
+            <p>Industrial console sofa table with open storage shelves and O-shaped metal frame.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-huuger-entryway-console-table.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3OFvhu1" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room" data-reveal>
+          <a class="product-card__media" href="product-yopeng-modular-sectional-couch.html">
+            <img src="https://m.media-amazon.com/images/I/713CNxR45HL._AC_SL1500_.jpg"
+              alt="YOPENG luxury modular sectional couch in beige boucle" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>YOPENG Luxury Modular Sectional Couch</h3>
+            <p>125-inch modular sectional sofa with ottoman chaise and curved L-shape profile.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-yopeng-modular-sectional-couch.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4bXQ59T" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom" data-reveal>
+          <a class="product-card__media" href="product-fluted-tv-stand-80-inch.html">
+            <img src="https://m.media-amazon.com/images/I/71R5rfCoPLL._AC_SL1500_.jpg"
+              alt="Fluted black wood TV stand for TVs up to 80 inches" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Fluted TV Stand for TVs up to 80 Inches</h3>
+            <p>Mid-century modern media console with adjustable shelf and cable management holes.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-fluted-tv-stand-80-inch.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/46LNlZG" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom small-spaces" data-reveal>
+          <a class="product-card__media" href="product-joinice-round-coffee-table-set.html">
+            <img src="https://m.media-amazon.com/images/I/81XecdItAtL._AC_SL1500_.jpg"
+              alt="JOINICE round coffee table and matching end table set in walnut finish" loading="lazy"
+              decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom, Small Spaces</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>JOINICE Round Coffee Table and End Table Set</h3>
+            <p>Walnut fluted center table with storage plus matching side table for compact spaces.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-joinice-round-coffee-table-set.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4aHn7ZK" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom" data-reveal>
+          <a class="product-card__media" href="product-harritpure-arched-full-length-mirror.html">
+            <img src="https://m.media-amazon.com/images/I/81sd2EmqsPL._AC_SL1500_.jpg"
+              alt="HARRITPURE arched full length mirror with aluminum alloy frame" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>HARRITPURE 76&quot;x34&quot; Arched Full Length Mirror</h3>
+            <p>Oversized arched mirror with aluminum alloy frame for floor-standing or wall-mounted placement.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-harritpure-arched-full-length-mirror.html">View product details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4sm0scE" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom" data-reveal>
+          <a class="product-card__media" href="product-ameriwood-home-franklin-accent-table-pink.html">
+            <img src="https://m.media-amazon.com/images/I/81uqi+z9rUL._AC_SL1500_.jpg"
+              alt="Ameriwood Home Franklin accent table with 2 drawers in pink" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Ameriwood Home Franklin Accent Table with 2 Drawers (Pink)</h3>
+            <p>Compact side table with two drawers and lower shelf for bedroom and living room storage.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-ameriwood-home-franklin-accent-table-pink.html">View product
+                details</a>
+              <a class="btn btn--primary" href="https://amzn.to/3OONvt9" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card catalog-item" data-catalog-item data-department="furniture"
+          data-rooms="living-room bedroom" data-reveal>
+          <a class="product-card__media" href="product-vie-savaran-floral-pillow-covers-set-of-4.html">
+            <img src="https://m.media-amazon.com/images/I/51bu7CKO0AL._AC_.jpg"
+              alt="Vie Savaran floral pillow covers in pink rose watercolor print" loading="lazy" decoding="async" />
+          </a>
+          <div class="product-card__body">
+            <div class="catalog-badges">
+              <span class="catalog-badge">Furniture</span>
+              <span class="catalog-badge">Room: Living Room, Bedroom</span>
+            </div>
+            <p class="product-card__label">Featured Amazon Pick</p>
+            <h3>Vie Savaran Floral Pillow Covers (Set of 4, 16x16)</h3>
+            <p>Watercolor pink floral pillow covers with hidden zipper closure for sofa, bedroom, or accent chair
+              styling.</p>
+            <div class="product-card__actions">
+              <a class="btn btn--soft" href="product-vie-savaran-floral-pillow-covers-set-of-4.html">View product
+                details</a>
+              <a class="btn btn--primary" href="https://amzn.to/4aIZdhI" target="_blank"
+                rel="noopener noreferrer nofollow sponsored">Check the latest price on Amazon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="catalog-empty" data-catalog-empty hidden>
+        <h3>No products match this filter yet.</h3>
+        <p>Try a different room or switch one filter back to "All".</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Moonlit Home Decor</strong><br />
+      <span>Curated home finds for calm, modern spaces.</span><br />
+      <span class="footer-disclosure">Some links may earn us a commission.</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Us</a>
+      <a href="categories.html">Categories</a>
+    </div>
+    <div>&copy; <span data-year></span> Moonlit Home Decor</div>
+  </footer>
+</body>
+
 </html>
