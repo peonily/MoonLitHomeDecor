@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moonlit Home Decor Affiliate Publisher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="appShell">
+      <section class="hero">
+        <div class="hero__eyebrow">Moonlit Home Decor</div>
+        <h1>Affiliate Product Publisher</h1>
+        <p>
+          Paste an Amazon affiliate link and one or more image URLs. The app will preview the product, generate or
+          update a `product-*.html` detail page, and insert the matching card inside `categories.html`.
+        </p>
+      </section>
+
+      <section class="grid">
+        <form id="productForm" class="panel">
+          <div class="panel__head">
+            <h2>Inputs</h2>
+            <p>Only the Amazon affiliate URL and at least one image URL are required.</p>
+          </div>
+
+          <label class="field">
+            <span>Amazon affiliate URL</span>
+            <input id="affiliateUrl" name="affiliateUrl" type="url" required placeholder="https://amzn.to/..." />
+          </label>
+
+          <label class="field">
+            <span>Amazon image URLs</span>
+            <textarea
+              id="imageUrls"
+              name="imageUrls"
+              rows="4"
+              required
+              placeholder="One image URL per line&#10;https://m.media-amazon.com/...&#10;https://m.media-amazon.com/..."
+            ></textarea>
+            <small class="field__hint">The first image becomes the main card image and social preview image.</small>
+          </label>
+
+          <fieldset class="fieldset">
+            <legend>Departments</legend>
+            <p class="field__hint">Leave unselected to auto-detect one department from the product title and bullets.</p>
+            <div id="departments" class="choiceGrid" role="group" aria-label="Department options"></div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Rooms</legend>
+            <p class="field__hint">Leave unselected to auto-detect one room.</p>
+            <div id="rooms" class="choiceGrid" role="group" aria-label="Room options"></div>
+          </fieldset>
+
+          <details class="advanced">
+            <summary>Optional overrides</summary>
+            <label class="field">
+              <span>Short title</span>
+              <input id="shortTitle" name="shortTitle" type="text" placeholder="Leave blank to auto-generate" />
+            </label>
+            <label class="field">
+              <span>Card summary</span>
+              <textarea
+                id="cardCopy"
+                name="cardCopy"
+                rows="3"
+                placeholder="Optional custom text for the categories card"
+              ></textarea>
+            </label>
+            <label class="field">
+              <span>Page summary</span>
+              <textarea
+                id="pageSummary"
+                name="pageSummary"
+                rows="3"
+                placeholder="Optional custom intro for the product detail page"
+              ></textarea>
+            </label>
+            <label class="field">
+              <span>Image alt text</span>
+              <input id="altText" name="altText" type="text" placeholder="Optional custom alt text" />
+            </label>
+          </details>
+
+          <div class="actions">
+            <button type="submit" class="btn btn--ghost">Preview</button>
+            <button type="button" id="publishBtn" class="btn btn--primary">Publish to site</button>
+          </div>
+
+          <div id="status" class="status" aria-live="polite"></div>
+        </form>
+
+        <section class="panel panel--preview">
+          <div class="panel__head">
+            <h2>Preview</h2>
+            <p>Review the generated metadata before writing files.</p>
+          </div>
+
+          <div id="emptyState" class="emptyState">
+            Run a preview to inspect the generated title, metadata, taxonomy, and output paths.
+          </div>
+
+          <div id="preview" class="preview" hidden>
+            <div class="previewCard">
+              <img id="previewImage" alt="" />
+              <div>
+                <div id="previewTitle" class="previewCard__title"></div>
+                <div id="previewDepartments" class="previewCard__meta"></div>
+                <div id="previewRooms" class="previewCard__meta"></div>
+                <div id="previewAsin" class="previewCard__meta"></div>
+                <div id="previewPrice" class="previewCard__meta"></div>
+              </div>
+            </div>
+
+            <div class="metaGrid">
+              <div class="metaBox">
+                <div class="metaBox__label">Page file</div>
+                <code id="previewFile"></code>
+              </div>
+              <div class="metaBox">
+                <div class="metaBox__label">Product URL</div>
+                <code id="previewUrl"></code>
+              </div>
+              <div class="metaBox">
+                <div class="metaBox__label">Browse link</div>
+                <code id="previewBrowseHref"></code>
+              </div>
+              <div class="metaBox">
+                <div class="metaBox__label">Image count</div>
+                <p id="previewImageCount"></p>
+              </div>
+              <div class="metaBox">
+                <div class="metaBox__label">Meta description</div>
+                <p id="previewMetaDescription"></p>
+              </div>
+              <div class="metaBox">
+                <div class="metaBox__label">Open Graph title</div>
+                <p id="previewOgTitle"></p>
+              </div>
+              <div class="metaBox metaBox--full">
+                <div class="metaBox__label">Product bullets</div>
+                <ul id="previewBullets" class="bulletList"></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

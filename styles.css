@@ -825,6 +825,38 @@ img {
   padding: 0.8rem;
 }
 
+.product-gallery__main {
+  width: 100%;
+}
+
+.product-gallery__thumbs {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+  gap: 0.65rem;
+}
+
+.product-gallery__thumb {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  background: var(--surface-strong);
+  padding: 0.28rem;
+  cursor: pointer;
+}
+
+.product-gallery__thumb.is-active {
+  border-color: var(--accent-deep);
+  box-shadow: 0 0 0 1px rgba(122, 92, 65, 0.18);
+}
+
+.product-gallery__thumb img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.72rem;
+}
+
 .product-spotlight__content {
   display: flex;
   flex-direction: column;

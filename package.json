@@ -1,0 +1,7 @@
+{
+  "name": "moonlit-home-decor",
+  "private": true,
+  "scripts": {
+    "affiliate:app": "node tools/affiliate-admin/server.js"
+  }
+}
