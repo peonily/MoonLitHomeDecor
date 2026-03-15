@@ -419,7 +419,7 @@ function createAnalysis(input, amazonData) {
     pageSummary,
     bullets: amazonData.bullets.length ? amazonData.bullets : [cardCopy],
     price: amazonData.price,
-    priceLabel: "Check the latest price on Amazon",
+    priceLabel: "Check the latest price on Amazon instead",
     catalogPriceLabel: "Check current price on Amazon",
     availability: amazonData.availability,
     pageFile,
