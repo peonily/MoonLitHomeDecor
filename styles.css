@@ -924,7 +924,7 @@ img {
   box-shadow: 0 10px 25px rgba(56, 44, 30, 0.08);
   padding: 1rem 1.15rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
@@ -952,6 +952,65 @@ img {
 .footer-links a:hover {
   color: var(--text);
 }
+
+.contact-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.contact-card__intro {
+  color: var(--muted);
+}
+
+.contact-card__email {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact-card__email span {
+  font-weight: 700;
+  color: var(--text);
+  margin-right: 0.35rem;
+}
+
+.contact-card__email a {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.contact-form label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--surface-strong);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.contact-form textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  justify-self: start;
+}
+
 
 [data-reveal] {
   opacity: 0;
