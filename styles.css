@@ -96,7 +96,7 @@ img {
   padding: 0.78rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
   border: 1px solid rgba(214, 201, 184, 0.8);
   border-radius: 999px;
@@ -135,6 +135,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  margin-left: auto;
 }
 
 .site-nav__link {
@@ -182,6 +183,93 @@ img {
   font-size: 0.84rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-search {
+  position: relative;
+  flex: 1;
+  max-width: 320px;
+  min-width: 180px;
+  margin: 0 0.4rem;
+}
+
+.site-search__input {
+  width: 100%;
+  padding: 0.5rem 2.9rem 0.5rem 2.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  transition:
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.site-search__input::placeholder {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.site-search__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(184, 146, 103, 0.2);
+}
+
+.site-search__icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.site-search__submit {
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 999px;
+  padding: 0.32rem 0.7rem;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: linear-gradient(140deg, var(--accent), var(--accent-deep));
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.site-search__submit:hover {
+  transform: translateY(-50%) scale(1.02);
+  box-shadow: 0 8px 16px rgba(120, 87, 54, 0.25);
+}
+
+.site-search__submit:focus-visible {
+  outline: 2px solid rgba(184, 146, 103, 0.4);
+  outline-offset: 2px;
 }
 
 .hero,
@@ -1135,10 +1223,12 @@ img {
     position: relative;
     top: 0;
     border-radius: 1rem;
+    flex-wrap: wrap;
   }
 
   .menu-toggle {
     display: inline-flex;
+    margin-left: auto;
   }
 
   .site-nav {
@@ -1160,6 +1250,13 @@ img {
 
   .site-nav.is-open {
     display: flex;
+  }
+
+  .site-search {
+    order: 3;
+    width: 100%;
+    max-width: none;
+    margin: 0.25rem 0 0;
   }
 
   .department-grid {

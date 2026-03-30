@@ -1,6 +1,52 @@
 (() => {
   const menuToggle = document.querySelector(".menu-toggle");
   const siteNav = document.getElementById("primary-nav");
+  const siteHeader = document.querySelector(".site-header");
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialQuery = (urlParams.get("q") || "").trim();
+  let headerSearchInput = null;
+
+  if (siteHeader && !siteHeader.querySelector(".site-search")) {
+    const searchForm = document.createElement("form");
+    searchForm.className = "site-search";
+    searchForm.setAttribute("role", "search");
+    searchForm.setAttribute("action", "categories.html");
+    searchForm.setAttribute("method", "get");
+
+    const inputId = "site-search-input";
+    searchForm.innerHTML = `
+      <label class="sr-only" for="${inputId}">Search</label>
+      <svg class="site-search__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 21l-4.35-4.35m1.1-4.65a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <input
+        class="site-search__input"
+        id="${inputId}"
+        type="search"
+        name="q"
+        placeholder="Search"
+        autocomplete="off"
+      />
+      <button class="site-search__submit" type="submit">Go</button>
+    `;
+
+    const insertBeforeTarget = menuToggle || siteNav;
+    if (insertBeforeTarget && insertBeforeTarget.parentElement === siteHeader) {
+      siteHeader.insertBefore(searchForm, insertBeforeTarget);
+    } else if (siteNav && siteNav.parentElement === siteHeader) {
+      siteHeader.insertBefore(searchForm, siteNav);
+    } else {
+      siteHeader.append(searchForm);
+    }
+
+    headerSearchInput = searchForm.querySelector(".site-search__input");
+  } else if (siteHeader) {
+    headerSearchInput = siteHeader.querySelector(".site-search__input");
+  }
+
+  if (headerSearchInput && initialQuery) {
+    headerSearchInput.value = initialQuery;
+  }
 
   if (menuToggle && siteNav) {
     const closeMenu = () => {
@@ -75,6 +121,8 @@
 
     let activeDepartment = "all";
     let activeRoom = "all";
+    let activeQueryLabel = initialQuery;
+    let activeQuery = activeQueryLabel.toLowerCase();
     const departmentValues = new Set(
       departmentButtons.map((button) => button.dataset.filterValue || "all")
     );
@@ -82,6 +130,12 @@
     const roomAliases = {
       "kitchen-room": "kitchen",
     };
+    const itemSearchText = new Map(
+      items.map((item) => [
+        item,
+        (item.textContent || "").toLowerCase().replace(/\s+/g, " ").trim(),
+      ])
+    );
 
     const getActiveLabel = (buttons, value, fallback) => {
       const activeButton = buttons.find((button) => button.dataset.filterValue === value);
@@ -108,7 +162,9 @@
         const departmentMatch =
           activeDepartment === "all" || departments.includes(activeDepartment);
         const roomMatch = activeRoom === "all" || rooms.includes(activeRoom);
-        const visible = departmentMatch && roomMatch;
+        const queryMatch =
+          !activeQuery || (itemSearchText.get(item) || "").includes(activeQuery);
+        const visible = departmentMatch && roomMatch && queryMatch;
 
         item.hidden = !visible;
         if (visible) {
@@ -130,7 +186,12 @@
         currentRoomNode.textContent = roomLabel;
       }
       if (statusNode) {
-        statusNode.textContent = `Showing ${visibleCount} product${visibleCount === 1 ? "" : "s"}`;
+        const baseText = `Showing ${visibleCount} product${
+          visibleCount === 1 ? "" : "s"
+        }`;
+        statusNode.textContent = activeQueryLabel
+          ? `${baseText} for "${activeQueryLabel}"`
+          : baseText;
       }
       if (emptyNode) {
         emptyNode.hidden = visibleCount !== 0;
@@ -185,6 +246,14 @@
     setActiveButton(departmentButtons, activeDepartment);
     setActiveButton(roomButtons, activeRoom);
     applyFilters();
+
+    if (headerSearchInput) {
+      headerSearchInput.addEventListener("input", () => {
+        activeQueryLabel = headerSearchInput.value.trim();
+        activeQuery = activeQueryLabel.toLowerCase();
+        applyFilters();
+      });
+    }
 
     window.addEventListener("hashchange", () => {
       activeDepartment = "all";
