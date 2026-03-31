@@ -62,6 +62,7 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 .ambient-shape {
@@ -910,6 +911,54 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.blog-layout {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+
+.blog-layout .page-hero,
+.blog-layout .section,
+.blog-layout .blog-grid,
+.blog-layout .text-card {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blog-layout .page-hero p,
+.blog-layout .text-card p,
+.blog-layout .text-card li,
+.blog-layout .crumb,
+.blog-layout .muted {
+  font-size: 1rem;
+}
+
+.blog-layout .page-hero p {
+  max-width: none;
+}
+
+.blog-layout h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+.blog-layout h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+.blog-layout img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-layout .text-card {
+  overflow: visible;
 }
 
 .blog-card small {
