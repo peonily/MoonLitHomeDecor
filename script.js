@@ -1,4 +1,8 @@
 (() => {
+  if (document.body && document.body.classList.contains("blog-page")) {
+    return;
+  }
+
   const sharedHeader = `
     <header class="site-header">
       <a class="site-brand" href="index.html" aria-label="Moonlit Home Decor home">
