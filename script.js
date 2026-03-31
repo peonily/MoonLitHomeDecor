@@ -1,4 +1,57 @@
 (() => {
+  const sharedHeader = `
+    <header class="site-header">
+      <a class="site-brand" href="index.html" aria-label="Moonlit Home Decor home">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span class="brand-text">Moonlit Home Decor</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <a class="site-nav__link site-nav__link--active" href="index.html">Home</a>
+        <a class="site-nav__link" href="blog.html">Blog</a>
+        <a class="site-nav__link" href="about.html">About Us</a>
+        <a class="site-nav__link" href="categories.html">Categories</a>
+      </nav>
+    </header>
+  `.trim();
+  const sharedFooter = `
+    <footer class="site-footer">
+      <div>
+        <strong>Moonlit Home Decor</strong><br />
+        <span>Curated home finds for calm, modern spaces.</span><br />
+        <span class="footer-disclosure">This website is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.</span>
+      </div>
+                        <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="categories.html">Categories</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+      <div>&copy; <span data-year></span> Moonlit Home Decor</div>
+</footer>
+  `.trim();
+
+  const headerMount =
+    document.querySelector("[data-shared-header]") ||
+    document.querySelector("header.site-header");
+  if (headerMount) {
+    headerMount.outerHTML = sharedHeader;
+  }
+
+  const footerMount =
+    document.querySelector("[data-shared-footer]") ||
+    document.querySelector("footer.site-footer");
+  if (footerMount) {
+    footerMount.outerHTML = sharedFooter;
+  }
+
   const menuToggle = document.querySelector(".menu-toggle");
   const siteNav = document.getElementById("primary-nav");
   const siteHeader = document.querySelector(".site-header");
