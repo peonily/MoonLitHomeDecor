@@ -1,7 +1,5 @@
 (() => {
-  if (document.body && document.body.classList.contains("blog-page")) {
-    return;
-  }
+  const isBlogPage = document.body && document.body.classList.contains("blog-page");
 
   const sharedHeader = `
     <header class="site-header">
@@ -143,7 +141,7 @@
   }
 
   const revealTargets = Array.from(document.querySelectorAll("[data-reveal]"));
-  if (revealTargets.length > 0) {
+  if (!isBlogPage && revealTargets.length > 0) {
     if ("IntersectionObserver" in window) {
       const observer = new IntersectionObserver(
         (entries, currentObserver) => {
