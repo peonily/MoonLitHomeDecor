@@ -1010,6 +1010,58 @@ img {
   text-transform: uppercase;
 }
 
+.blog-kicker {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--accent-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-featured-image {
+  margin: 1rem 0 0.35rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(60, 48, 33, 0.12);
+}
+
+.image-credit {
+  margin-bottom: 1rem;
+  font-size: 0.88rem;
+}
+
+.blog-toc ol {
+  margin: 0.65rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.blog-toc li {
+  margin-bottom: 0.32rem;
+}
+
+.blog-toc a,
+.text-card a {
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+.blog-toc a:hover,
+.text-card a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.pinterest-callout {
+  background:
+    linear-gradient(135deg, rgba(255, 253, 249, 0.92), rgba(245, 235, 221, 0.86)),
+    var(--surface-strong);
+}
+
 .page-wrap {
   margin-top: 1.4rem;
 }
