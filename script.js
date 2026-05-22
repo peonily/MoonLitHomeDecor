@@ -185,6 +185,7 @@
     const roomValues = new Set(roomButtons.map((button) => button.dataset.filterValue || "all"));
     const roomAliases = {
       "kitchen-room": "kitchen",
+      livingroom: "living-room",
     };
     const itemSearchText = new Map(
       items.map((item) => [
