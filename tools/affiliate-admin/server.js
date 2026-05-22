@@ -540,8 +540,6 @@ function renderProductPage(data) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light" />
     <meta name="p:domain_verify" content="578821701055a4d83b23eb2fd7377eb7" />
-    <meta name="monetag" content="58b5e1eaeb039488471b1ab94b858ee4" />
-    <script src="https://quge5.com/88/tag.min.js" data-zone="241995" async data-cfasync="false"></script>
     <title>${escapeHtml(data.shortTitle)} | Moonlit Home Decor</title>
     <meta name="description" content="${escapeHtml(data.metaDescription)}" />
     <link rel="canonical" href="${escapeHtml(data.productUrl)}" />
