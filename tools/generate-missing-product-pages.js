@@ -145,6 +145,7 @@ function buildProductHtml(data) {
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <meta name="color-scheme" content="light" />
     <meta name="p:domain_verify" content="578821701055a4d83b23eb2fd7377eb7" />
+    <meta name="monetag" content="58b5e1eaeb039488471b1ab94b858ee4" />
     <title>${escapeHtml(data.title)} | Moonlit Home Decor</title>
     <meta name="description" content="${escapeHtml(metaDescription)}" />
     <link rel="canonical" href="${escapeHtml(productUrl)}" />
